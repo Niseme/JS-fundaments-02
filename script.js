@@ -85,3 +85,48 @@ function fruitProcessor(apples, oranges) {
     return juice;
 }
 console.log(fruitProcessor(4, 3));*/
+
+/*//37.Reviewing Functions
+
+const calcAge = function (birthYear) {
+    return 2022 - birthYear;
+}
+
+const yearUntilRetirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
+    if (retirement > 0) {
+        return retirement;
+    } else {
+        return -1;
+    }
+    return retirement;
+    // return `${firstName} retiret ar ${retirement} years`;
+}
+
+console.log(yearUntilRetirement(1888, 'Jonas'));
+console.log(yearUntilRetirement(1989, 'Jonas'));*/
+
+//function review
+
+/*function calcAge(birthYear) {  //function declaration
+    return 2022 - birthYear;
+}
+
+const calcAge = function (birthYear) { //function expression 
+    return 2022 - birthYear;
+}
+
+const calcAge = birthYear => 2022 - birthYear; //Arrow function*/
+
+function addition(a) {
+    let plus1 = a + 1;
+    let plus2 = a + 2;
+    return (plus1, plus2)
+}
+
+let plus1 = addition(3);
+let plus2 = addition(3);
+
+console.log(plus1);
+console.log(plus2);
