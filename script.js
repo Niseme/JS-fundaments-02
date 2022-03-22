@@ -16,7 +16,7 @@ function logger() {
     console.log(`My name is Jonas`);
 }
 
-//calling; running; invoking the function 
+//calling; running; invoking the function
 logger();
 
 function fruitProcessor(apples, oranges) {
@@ -39,7 +39,7 @@ function calcAge1(birthYear) {
 const age1 = calcAge1(1989);
 console.log(age1);
 
-//function expression 
+//function expression
 const calcAge2 = function (birthYear) {
     return 2022 - birthYear;
 }
@@ -119,14 +119,29 @@ const calcAge = function (birthYear) { //function expression
 
 const calcAge = birthYear => 2022 - birthYear; //Arrow function*/
 
-function addition(a) {
-    let plus1 = a + 1;
-    let plus2 = a + 2;
-    return (plus1, plus2)
+/*//Coding Challenge #1
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+let a1 = 44;
+let b1 = 23;
+let c1 = 71;
+let a2 = 65;
+let b2 = 54;
+let c2 = 49;
+
+
+const avgDolphins = calcAverage(a1, b1, c1);
+const avgKoalas = calcAverage(a2, b2, c2);
+
+console.log(avgDolphins, avgKoalas);
+
+const checkWinner = function (average1, average2) {
+    if (average1 >= average2 * 2) {
+        console.log(`Dolphins win ${average1} vs. ${average2}`);
+    } else if (average2 >= average1 * 2) {
+        console.log(`Koalas win ${average2} vs. ${average1}`);
+    } else {
+        console.log(`no one win`);
+    }
 }
 
-let plus1 = addition(3);
-let plus2 = addition(3);
-
-console.log(plus1);
-console.log(plus2);
+checkWinner(avgDolphins, avgKoalas);*/
